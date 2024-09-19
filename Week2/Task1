@@ -1,0 +1,27 @@
+const int blueColor = 5;
+const int redColor = 6;
+const int greenColor = 9;
+
+void setup() {
+  pinMode(greenColor, OUTPUT);
+  pinMode(redColor, OUTPUT);
+  pinMode(blueColor, OUTPUT);
+}
+
+void loop() {
+  
+  analogWrite(greenColor, 255);
+  
+  analogWrite(redColor, 255);
+
+  analogWrite(blueColor, 255);
+  
+  
+  
+  for (int i = 255; i >= 0; i--) {
+    analogWrite(greenColor, i); 
+    delay(20); 
+  }
+
+  delay(5000); 
+}
